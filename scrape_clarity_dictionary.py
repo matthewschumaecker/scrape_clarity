@@ -45,7 +45,7 @@ def get_table_data(table_name):
 
 def main():
     data_dictionary=[]
-    for link in get_table_links()[:100]:
+    for link in get_table_links():
         data_dictionary.append(get_table_data(link))
         print(f"Writing {link} to data_dictionary...")
 
