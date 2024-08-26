@@ -45,29 +45,10 @@ def get_table_data(table_name):
 
 def main():
     data_dictionary=[]
-    for link in get_table_links()[:100]:
+    for link in get_table_links():
         data_dictionary.append(get_table_data(link))
         print(f"Writing {link} to data_dictionary...")
 
     with open("clarity_data_dictionary.json", "w") as outfile:
         print(f"converting dictionary to json file: 'clarity_data_dictionary.json'")
         json.dump(data_dictionary, outfile, indent=4)
-
-import time
-
-start_time = time.time()
-
-
-
-if __name__ == "__main__":
-    main()
-
-end_time = time.time()
-elapsed_time = end_time - start_time
-
-minutes = int(elapsed_time // 60)
-seconds = int(elapsed_time % 60)
-
-print(f"Execution Time: {minutes} minutes and {seconds} seconds")
-
-
