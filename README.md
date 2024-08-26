@@ -1,4 +1,4 @@
-This is a program designed to scrape open.ai.com to create a data dictionary in JSON format of all of the Clarity tables listed here.
+This is a program designed to scrape open.epic.com to create a data dictionary in JSON format of all of the Clarity tables listed here.
 
 
  {
